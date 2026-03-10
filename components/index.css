@@ -1,0 +1,22 @@
+:root {
+    --primary: #13a33e;
+    --secondary: gray;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+/* Nav Menu Styling */
+
+/* Button Styling */
+.btn {
+  padding: 10px 8px;
+  border-radius: 8px;
+  border: none;
+}
+
+.btn-primary {
+  background: var(--primary);
+  color: white;
+}
