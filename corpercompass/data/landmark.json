@@ -39,6 +39,18 @@
       "lat": 4.78,
       "lng": 7.03,
       "type": "nysc"
+    },
+    {
+      "name": "Zuma Rock",
+      "lat": 9.15,
+      "lng": 7.24,
+      "description": "Famous rock in Niger State."
+    },
+    {
+      "name": "Aso Rock",
+      "lat": 9.08,
+      "lng": 7.53,
+      "description": "Major landmark in Abuja."
     }
   ]
 }
