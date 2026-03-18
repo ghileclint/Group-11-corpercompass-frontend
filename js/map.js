@@ -1,35 +1,15 @@
-// // create map and set initial view
-// const map = L.map("map").setView([9.082, 8.6753], 6); // lat, lng, zoom
+// // Google Map iFrame 
 
-// // // Load GeoJson file
-// fetch("../assests_images/ng.json")
-//   .then((res) => res.json())
-//   .then((data) => {
-//     function zoomToFeature(e) {
-//       map.fitBounds(e.target.getBounds());
-//     }
+const landmarks = document.querySelectorAll('#landmarkList li');
+const mapFrame = document.getElementById('mapFrame');
 
-//     function onEachFeature(feature, layer) {
-//       layer.on({
-//         click: zoomToFeature,
-//       });
-//     }
+landmarks.forEach(item => {
+    item.addEventListener("click", () => {
+        landmarks.forEach(li => li.classList.remove("active"));
+        item.classList.add("active");
+        const location = item.getAttribute("data-location")
 
-//     L.geoJSON(data, {
-//       style: {
-//         color: "#ff7800",
-//         weight: 3,
-//         opacity: 0.65,
-//       },
-//       onEachFeature: onEachFeature,
-//     }).addTo(map);
-//   });
-
-// // Add OpenStreetMap tile layer
-// L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png", {
-//   maxZoom: 19,
-//   attribution:
-//     '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>',
-// }).addTo(map);
-
-
+        mapFrame.src = `https://www.google.com/maps?q=${encodeURIComponent(location)}&output=embed`
+    })
+})
+            

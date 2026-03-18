@@ -36,7 +36,7 @@
     <!-- Top Nav -->
     <nav class="top-menu">
       <a href="#" class="logo">
-        <img src="/assests_images/images/Rectangle.png" alt="">CorperCompass
+        <img src="/assests_images/images/Rectangle.png" alt="" />CorperCompass
       </a>
 
       <div class="top-menu-search">
@@ -61,7 +61,9 @@
 
       <div class="sidebar">
         <nav class="side-menu">
-          <a href="dashboard.html"><i class="fa-solid fa-house"></i> Dashboard</a>
+          <a href="dashboard.html"
+            ><i class="fa-solid fa-house"></i> Dashboard</a
+          >
           <a href="map.html" class="active"
             ><i class="fa-solid fa-earth-africa"></i> Map</a
           >
@@ -84,15 +86,17 @@
 
       <div class="map-section">
         <h2>Map</h2>
-        <div id="map">
+        <div class="map-container">
           <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3925.4496413607003!2d7.3749200736892675!3d10.305853967699942!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x104d390bec57a345%3A0xbe9040ed38cc58ff!2sNYSC%20Orientation%20Camp%20Kaduna%20(Black%20Gold%20Camp)!5e0!3m2!1sen!2sng!4v1773684702442!5m2!1sen!2sng"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8070397.583650095!2d3.3662634182944564!3d9.006718650648152!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x104e0baf7da48d0d%3A0x99a8fe4168c50bc8!2sNigeria!5e0!3m2!1sen!2sng!4v1773759185950!5m2!1sen!2sng"
+            id="mapFrame"
             width="100%"
             height="100%"
             style="border: 0"
             allowfullscreen=""
-            loading="lazy"
             referrerpolicy="no-referrer-when-downgrade"
+            loading="lazy"
+            
           ></iframe>
         </div>
       </div>
@@ -100,10 +104,12 @@
       <div class="description">
         <h4><i class="fa-solid fa-landmark"></i>Landmarks</h4>
         <div class="landmarks">
-          <ul>
-            <li><a href="#">NYSC Orientation Camp Kaduna</a></li>
-            <li><a href="#">NYSC Orientation Camp Enugu</a></li>
-            <li><a href="#">NYSC Orientation Camp Oyo</a></li>
+          <ul id="landmarkList">
+            <li data-location="NYSC Orientation Camp, Kaduna">
+              NYSC Orientation Camp Kaduna
+            </li>
+            <li data-location="NYSC Orientation Camp, Enugu">NYSC Orientation Camp Enugu</li>
+            <li data-location="NYSC Orientation Camp, Oyo">NYSC Orientation Camp Oyo</li>
           </ul>
         </div>
       </div>
