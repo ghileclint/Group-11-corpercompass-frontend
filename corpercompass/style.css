@@ -643,3 +643,41 @@ color: white;
 .background-container span {
     color: #fff;
 }
+
+.language-table{
+display:grid;
+grid-template-columns:repeat(4,1fr);
+gap:px;
+padding:40px;
+}
+
+/* cell styling */
+
+.cell{
+padding:14px 18px;
+border-radius:8px;
+border:1px solid #ddd;
+}
+
+/* repeating row colors */
+
+.language-table .cell:nth-child(12n + 1),
+.language-table .cell:nth-child(12n + 2),
+.language-table .cell:nth-child(12n + 3),
+.language-table .cell:nth-child(12n + 4){
+background:#f8f9fa;
+}
+
+.language-table .cell:nth-child(12n + 5),
+.language-table .cell:nth-child(12n + 6),
+.language-table .cell:nth-child(12n + 7),
+.language-table .cell:nth-child(12n + 8){
+background:#e9f2ff;
+}
+
+.language-table .cell:nth-child(12n + 9),
+.language-table .cell:nth-child(12n + 10),
+.language-table .cell:nth-child(12n + 11),
+.language-table .cell:nth-child(12n + 12){
+background:#eef7f1;
+}
