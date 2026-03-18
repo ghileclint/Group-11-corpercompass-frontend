@@ -1,0 +1,473 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+.main-header{
+background:white;
+padding:20px 40px;
+display:flex;
+justify-content:space-between;
+align-items:flex-start;
+}
+
+
+/* LEFT + RIGHT MENU */
+.left-menu,
+.right-menu{
+display:flex;
+gap:40px;
+}
+
+
+/* MENU COLUMN */
+.menu-item h4{
+font-size:14px;
+margin-bottom:8px;
+font-weight:bold;
+}
+
+
+/* LIST STYLE */
+.menu-item ul{
+list-style:none;
+margin-top: 40px;
+}
+
+
+.menu-item ul li{
+font-size:13px;
+margin:4px 0;
+color:#333;
+cursor:pointer;
+}
+
+
+/* HOVER EFFECT */
+.menu-item ul li:hover{
+color:#00b56a;
+}
+
+
+/* LOGO */
+.logo{
+align-self:center;
+}
+
+.logo img{
+width:50px;
+height:auto;
+display:block;
+margin-top: -90px;
+}
+
+.hero{
+    height:450px;
+
+    background-image: url("CORPER.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    display:flex;
+    align-items:center;
+
+    padding-left:80px;
+}
+
+.hero-text{
+    max-width:500px;
+}
+
+.hero-text h1{
+    font-size:48px;
+    color:white;
+    margin-bottom:20px;
+}
+
+.hero-text h3{
+    color:#7CA263;
+   font-family: inter;
+    font-style:italic;
+    line-height:54.48px;
+    font-size: 36.32px;
+    font-weight: 700;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+
+span{
+    color: white;
+}
+
+.learn-important-heading{
+    display: flex;
+    justify-content: center;
+    padding: 20px 20px;
+}
+
+
+
+.ethnic{
+    width:85%;
+    margin:80px auto;
+    padding:40px;
+
+    background:#ebe6e3;
+
+    border:3px solid #7da567;
+    border-radius:20px;
+
+    position:relative;
+
+      font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.ethnic h2{
+    position:absolute;
+    top:-18px;
+    left:50%;
+    transform:translateX(-50%);
+
+    background:#7da567;
+    color:white;
+
+    padding:8px 30px;
+
+    border-radius:10px;
+    font-size:20px;
+        z-index:2;
+}
+
+.ethnic p{
+    font-size:14px;
+    line-height:1.6;
+    color:#333;
+    margin-bottom:12px;
+}
+
+.ethnic-details{
+    display:grid;
+    grid-template-columns:220px 1fr;
+    margin-top:20px;
+}
+
+.ethnic-labels{
+    background:#dcd7d3;
+    padding:15px;
+    font-weight:bold;
+}
+
+.ethnic-labels p{
+    margin:8px 0;
+}
+
+.ethnic-values{
+    padding:15px;
+}
+
+.ethnic-values p{
+    margin:8px 0;
+}
+
+.culture-cards{
+    width:85%;
+    margin:60px auto;
+
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:30px;
+}
+
+
+/* 
+   INDIVIDUAL CARD
+ */
+
+.card{
+    background:#ebe6e3;
+    border:3px solid #7da567;
+
+    border-radius:20px;
+    overflow:hidden;
+
+    box-shadow:0 4px 10px rgba(0,0,0,0.08);
+}
+
+
+/* 
+   CARD HEADER (GREEN TOP)
+*/
+
+.card-header{
+    background:#7da567;
+    padding:15px 20px;
+}
+
+.card-header h3{
+    color:#fff;
+    font-size:18px;
+
+    display:flex;
+    align-items:center;
+    gap:10px;
+}
+
+
+/* 
+   ICON STYLE (IMPORTANT)
+*/
+
+.card-header i{
+    color:#2e7d32;   /* darker green */
+    font-size:26px;  /* bigger like image */
+}
+
+
+/* 
+   CARD BODY
+ */
+
+.card-body{
+    padding:20px;
+}
+
+.card-body p{
+    font-size:14px;
+    line-height:1.7;
+    color:#333;
+    margin-bottom:12px;
+}
+
+
+/* 
+   FOOD & FESTIVALS SECTION
+ */
+
+.food-festivals{
+    width:85%;
+    margin:50px auto;
+    padding:40px;
+
+    background:#ebe6e3;
+
+    border:3px solid #7da567;
+    border-radius:20px;
+
+    position:relative;
+}
+
+
+/* 
+   FOOD TITLE BADGE
+ */
+
+.food-festivals h2{
+    position:absolute;
+    top:-20px;
+    left:50%;
+    transform:translateX(-50%);
+
+    background:#7da567;
+    color:#fff;
+
+    padding:10px 30px;
+    border-radius:15px;
+
+    font-size:20px;
+
+    display:flex;
+    align-items:center;
+    gap:10px;
+}
+
+
+/* ICONS INSIDE FOOD TITLE */
+
+.food-festivals h2 i{
+    color:#2e7d32;
+    font-size:24px;
+}
+
+
+/* 
+   FOOD CONTENT
+ */
+
+.food-content{
+    margin-top:20px;
+}
+
+.food-content p{
+    font-size:14px;
+    line-height:1.7;
+    color:#333;
+
+    margin-bottom:20px;
+}
+
+/* footer styling */
+.footer{
+    background:#f3f3f3;
+    padding:40px 80px;
+    font-family:Arial, sans-serif;
+}
+
+
+/* 
+   TOP SECTION
+*/
+
+.footer-top{
+    display:flex;
+    align-items:center;
+    gap:40px;
+}
+
+
+/* 
+   LOGO (IMPORTANT PART)
+*/
+
+.footer-logo img{
+    width:180px;   /* controls size */
+    height:auto;
+    display:block;
+}
+
+
+/* 
+   INTRO TEXT
+*/
+
+.footer-intro{
+    max-width:600px;
+}
+
+.footer-intro p{
+    font-size:16px;
+    line-height:1.6;
+    color:#222;
+    margin-bottom:20px;
+}
+
+
+/* 
+   BUTTONS
+ */
+
+.footer-buttons{
+    display:flex;
+    gap:15px;
+}
+
+.btn-primary{
+    background:#000;
+    color:#fff;
+
+    padding:14px 22px;
+    border:none;
+    border-radius:12px;
+
+    font-size:16px;
+    font-weight:600;
+    cursor:pointer;
+}
+
+.btn-secondary{
+    background:#184d2f;
+    color:#fff;
+
+    padding:14px 22px;
+    border:none;
+    border-radius:12px;
+
+    font-size:16px;
+    font-weight:600;
+    cursor:pointer;
+}
+
+
+/* 
+   DIVIDER
+ */
+
+.footer hr{
+    margin:40px 0;
+    border:none;
+    border-top:1px solid #ddd;
+}
+
+
+/* 
+   LINKS SECTION
+*/
+
+.footer-links{
+    display:grid;
+    grid-template-columns:repeat(5, 1fr);
+    gap:30px;
+}
+
+
+/* 
+   COLUMN
+ */
+
+.footer-column h4{
+    font-size:14px;
+    font-weight:700;
+    margin-bottom:15px;
+    color:#000;
+}
+
+.footer-column a{
+    display:block;
+    text-decoration:none;
+    color:#333;
+    font-size:14px;
+    margin-bottom:10px;
+}
+
+.footer-column a:hover{
+    color:#7da567;
+}
+
+
+/*
+   BOTTOM SECTION
+*/
+
+.footer-bottom{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    margin-top:40px;
+    font-size:14px;
+    color:#333;
+}
+
+
+/* 
+   BOTTOM LINKS
+ */
+
+.footer-bottom-links{
+    display:flex;
+    align-items:center;
+    gap:10px;
+}
+
+.footer-bottom-links a{
+    text-decoration:none;
+    color:#333;
+}
+
+.footer-bottom-links a:hover{
+    color:#7da567;
+}
