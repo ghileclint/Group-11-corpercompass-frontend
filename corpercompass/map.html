@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Map</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="/css/map.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+      integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+      crossorigin=""
+    />
+    <script
+      src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+      integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+      crossorigin=""
+    ></script>
+    <script src="/js/map.js" defer></script>
+  </head>
+
+  <body>
+    <!-- Top Nav -->
+    <nav class="top-menu">
+      <a href="/corpercompass/home.html" class="logo">
+        <img src="/assests_images/images/Rectangle.png" alt="" />CorperCompass
+      </a>
+
+      <div class="top-menu-search">
+        <div class="top-nav-search">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <input type="search" name="Search" id="search" placeholder="Search" />
+        </div>
+        <i class="fa-regular fa-bell top-bell"></i>
+      </div>
+
+      <div class="top-menu-avatar">
+        <div class="profile-head">
+          <img src="../assests_images/images/profile1.png" alt="profile" />
+        </div>
+        <p class="profile-name">Adaeze Okonkwo</p>
+        <i class="fa-solid fa-angle-down"></i>
+      </div>
+    </nav>
+
+    <section class="map-layout">
+      <!-- Side-Nav Menu-->
+
+      <div class="sidebar">
+        <nav class="side-menu">
+          <a href="dashboard.html"
+            ><i class="fa-solid fa-house"></i> Dashboard</a
+          >
+          <a href="map.html" class="active"
+            ><i class="fa-solid fa-earth-africa"></i> Map</a
+          >
+          <a href="culture.html"
+            ><i class="fa-solid fa-book-open"></i> Culture Guide</a
+          >
+          <a href="/Housing/housing.html" target="_blank"> <i class="fa-solid fa-house"></i>Housing</a>
+          <a href="checklist.html"
+            ><i class="fa-regular fa-rectangle-list"></i> Checklist</a
+          >
+          <a href="budget.html"
+            ><i class="fa-solid fa-wallet"></i> Budget Tracker</a
+          >
+          <hr />
+          <a href="profile.html"><i class="fa-solid fa-user"></i> Profile</a>
+          <a href="settings.html"><i class="fa-solid fa-gear"></i> Settings</a>
+        </nav>
+      </div>
+
+      <!-- Map Section -->
+
+      <div class="map-section">
+        <h2>Map</h2>
+        <div class="map-container">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8070397.583650095!2d3.3662634182944564!3d9.006718650648152!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x104e0baf7da48d0d%3A0x99a8fe4168c50bc8!2sNigeria!5e0!3m2!1sen!2sng!4v1773759185950!5m2!1sen!2sng"
+            id="mapFrame"
+            width="100%"
+            height="100%"
+            style="border: 0"
+            allowfullscreen=""
+            referrerpolicy="no-referrer-when-downgrade"
+            loading="lazy"
+            
+          ></iframe>
+        </div>
+      </div>
+
+      <div class="description">
+        <h4><i class="fa-solid fa-landmark"></i>Landmarks</h4>
+        <div class="landmarks">
+          <ul id="landmarkList">
+            <li data-location="NYSC Orientation Camp, Kaduna">
+              NYSC Orientation Camp Kaduna
+            </li>
+            <li data-location="NYSC Orientation Camp, Enugu">NYSC Orientation Camp Enugu</li>
+            <li data-location="NYSC Orientation Camp, Oyo">NYSC Orientation Camp Oyo</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

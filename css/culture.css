@@ -1,0 +1,296 @@
+* {
+    margin: 5px;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.inter-font-family {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.poppins-thin {
+  font-family: "Poppins", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.poppins-extralight {
+  font-family: "Poppins", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+}
+
+.poppins-light {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.poppins-regular {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.poppins-medium {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.poppins-semibold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.poppins-bold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.poppins-extrabold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+  font-style: normal;
+}
+
+.poppins-black {
+  font-family: "Poppins", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.poppins-thin-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 100;
+  font-style: italic;
+}
+
+.poppins-extralight-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 200;
+  font-style: italic;
+}
+
+.poppins-light-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.poppins-regular-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.poppins-medium-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: italic;
+}
+
+.poppins-semibold-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: italic;
+}
+
+.poppins-bold-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.poppins-extrabold-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+  font-style: italic;
+}
+
+.poppins-black-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 900;
+  font-style: italic;
+}
+
+
+.nav-bar {
+    display: flex;
+    gap: 10px;
+    list-style: none;
+    justify-content: space-between;
+}
+
+.nav-bar-description {
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+}
+
+.nav-bar-description ul {
+    gap: 30px;
+}
+
+.main-container {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 50px;
+}
+
+.main-container p {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.main-section {
+    background: url('../assests_images/images/Abuja, Nigeria 🇳🇬 2.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 462px;
+    width: 100%;
+}
+
+.h1 {
+    color: #fff;
+    padding-top: 80px;
+    margin-left: 54px;
+    font-size: 59px;
+}
+
+.main-section button {
+    background-color: #7CA263;
+    width: 339px;
+    height: 86px;
+    border-radius: 25px;
+    border: none;
+    padding: 19px 33px;
+    margin-left: 55px;
+    color: #fff;
+    font-style: bold;
+    font-size: 36px;
+    font-weight: 700;
+    margin-top: 160px;
+}
+
+.descriptive-text {
+    border: 4px solid #7CA263;
+    border-radius: 10px;
+    color: #000;
+    font-size: 48px;
+    background-color: #fff;
+    width: fit-content;
+    padding: 30px 28px;
+    text-align: center;
+}
+
+.img-1 {
+    width: 90%;
+    height: 403px;
+    border-radius: 40px;
+    margin: 0;
+}
+
+.img-2 {
+    width: 100%;
+    height: 403px;
+    border-radius: 40px;
+}
+
+.img-3 {
+    width: 100%;
+    height: 334px;
+    border-radius: 40px;
+}
+
+.img-4 {
+    width: 100%;
+    height: 344px;
+    border-radius: 40px;
+}
+
+.footer {
+    border-top: 1px solid #000;
+    max-width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.cta-section {
+    display: flex;
+}
+
+.cta-section img {
+    width: 100px;
+    height: 105px;
+}
+
+.cta-section h4 {
+    margin-top: auto;
+    margin-bottom: auto;
+    font-weight: bold;
+    font-family: 'poppins';
+}
+
+.footer-container {
+    display: flex;
+    flex-direction: row;
+    border-top: 1px solid #000;
+}
+
+.footer-container ul {
+    list-style: none;
+}
+
+.footer-text {
+    font-size: 20px;
+    font-weight: 400;
+}
+.header {
+    font-weight: bold;
+}
+
+.disclaimer {
+    border-bottom: 1px solid #000;
+}
+
+.cta-btn {
+    height: 75px;
+    width: 250px;
+    border-radius: 16px;
+    padding: 18px;
+    color: #fff;
+    background-color: #000;
+    font-size: 20px;
+}
+
+.nd-cta-btn {
+    height: 75px;
+    width: 250px;
+    border-radius: 16px;
+    padding: 18px;
+    color: #fff;
+    background-color: #114027;
+    font-size: 20px;
+}
+
+.copyright-info {
+    display: flex;
+    gap: 20px;
+}
+
+.privacy-policy {
+    display: flex;
+    list-style-type: none;
+    gap: 30px;
+}
+
+.privacy-policy li:nth-child(n+2) {
+    list-style: disc;
+}
