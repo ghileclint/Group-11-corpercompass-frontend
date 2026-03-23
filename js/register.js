@@ -9,7 +9,7 @@ const password = document.getElementById("password").value;
 try{
 
 const response = await fetch(
-"https://corper-compass-backend-production.up.railway.app/api/register",
+"https://corper-compass-backend-production.up.railway.app/api/auth/register",
 {
 method:"POST",
 
