@@ -1,4 +1,4 @@
-const BASE_URL = "https://corper-compass-backend-production.up.railway.app/"; 
+const BASE_URL = "https://corper-compass-backend-production.up.railway.app/api"; 
 
 
 // REGISTER USER
@@ -6,7 +6,7 @@ export async function registerUser(userData) {
 
   try {
 
-    const response = await fetch(`${BASE_URL}/auth/register/api`, {
+    const response = await fetch(`${BASE_URL}/auth/register`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json"
