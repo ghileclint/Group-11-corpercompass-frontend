@@ -1,4 +1,4 @@
-const BASE_URL = "http://localhost:3000/api"; 
+const BASE_URL = "https://corper-compass-backend-production.up.railway.app/"; 
 // replace with your team's backend URL if different
 
 
@@ -7,7 +7,7 @@ export async function registerUser(userData) {
 
   try {
 
-    const response = await fetch(`${BASE_URL}/register`, {
+    const response = await fetch(`${BASE_URL}/api`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json"
@@ -32,7 +32,7 @@ export async function loginUser(email, password) {
 
   try {
 
-    const response = await fetch(`${BASE_URL}/login`, {
+    const response = await fetch(`${BASE_URL}/api`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json"
@@ -60,7 +60,7 @@ export async function getUser(token) {
 
   try {
 
-    const response = await fetch(`${BASE_URL}/user`, {
+    const response = await fetch(`${BASE_URL}/api`, {
       method: "GET",
       headers: {
         "Authorization": `Bearer ${token}`
