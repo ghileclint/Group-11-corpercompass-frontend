@@ -57,6 +57,7 @@ body {
   font-family: var(--font);
   background: var(--bg-page);
   color: var(--black);
+  min-height: 100vh;
   overflow-x: hidden;
 }
 
@@ -79,6 +80,7 @@ button { cursor: pointer; font-family: var(--font); }
 .top-menu {
   position: sticky;
   top: 0;
+   z-index: 100;
   height: var(--topnav-h);
   background: var(--bg-topnav);
   border-bottom: 1px solid var(--border);
@@ -298,6 +300,7 @@ button { cursor: pointer; font-family: var(--font); }
 ══════════════════════════════════════════════════ */
 .dashboard {
   flex: 1;
+  overflow-y: auto;
   padding: 32px 36px 64px;
   display: flex;
   flex-direction: column;
