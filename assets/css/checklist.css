@@ -2,20 +2,39 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Inter", sans-serif;
+}
+
+:root {
+  --primary: #7ca263;
+  --fill: #f5f5f5;
+  --secondary: #d4d76d;
+  --text-color: #1f1f1f;
+  --bg-color: #fff;
 }
 
 body {
-  background: #f6f7f9;
+  font-family: "Inter", sans-serif;
+  width: 100%;
+  background-color: #e6e6e6;
+  /* overflow: hidden; */
 }
 
-/* Layout */
-.container {
-  display: flex;
+h1 {
+  font-weight: bold;
+}
+
+a {
+  text-decoration: none;
+  color: var(--text-color);
+}
+
+ul li {
+  list-style: none;
 }
 
 /* Sidebar */
 .sidebar {
+  position: fixed;
   width: 240px;
   height: 100vh;
   background: #fff;
@@ -25,16 +44,25 @@ body {
   align-items: space-between;
 }
 
-.logo {
-  margin-bottom: 20px;
+.sidebar .logo {
+  display: flex;
+  align-items: center;
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.sidebar .logo img {
+  margin-right: 10px;
 }
 
 .sidebar ul {
+  margin-top: 20px;
   list-style: none;
 }
 
-.sidebar i { 
-margin-right: 20px;
+.sidebar i {
+  margin-right: 20px;
+  font-size: 1.5rem;
 }
 
 .sidebar li {
@@ -44,8 +72,8 @@ margin-right: 20px;
   cursor: pointer;
 }
 
-.sidebar .active {
-  background: black;
+.sidebar .active, .sidebar li:hover {
+  background-color: var(--fill);
   color: #fff;
 }
 
@@ -55,8 +83,9 @@ margin-right: 20px;
 
 /* Content */
 .content {
+  margin-left: 250px;
   flex: 1;
-  padding: 20px;
+  padding-right: 20px;
 }
 
 /* Topbar */
@@ -64,12 +93,17 @@ margin-right: 20px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 20px 0;
 }
 
+.topbar .fa-bell {
+  position: absolute;
+  margin-left: 50%;
+}
 .search {
   width: 60%;
   padding: 10px;
-  border-radius: 20px;
+  border-radius: 10px;
   border: 1px solid #ddd;
 }
 
@@ -79,13 +113,29 @@ margin-right: 20px;
   gap: 20px;
 }
 
+.top-right .fa-angle-down {
+  cursor: pointer;
+}
+
+.top-right p {
+  font-weight: bold;
+}
+
+.top-right i {
+  font-size: 1.25rem;
+  margin-left: 5px;
+}
+
 .profile {
-  display: flex;
-  align-items: center;
-  gap: 10px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
 }
 
 .profile img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
   border-radius: 50%;
 }
 
@@ -123,6 +173,7 @@ margin-right: 20px;
 
 /* Right */
 .right {
+  margin-top: 80px;
   width: 250px;
 }
 
@@ -201,7 +252,6 @@ button {
 
 /* Mobile */
 @media (max-width: 768px) {
-
   .container {
     flex-direction: column;
   }
